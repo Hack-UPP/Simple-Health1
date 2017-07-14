@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner1.simplehealth.ventana2">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        android:textSize="26dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="149dp" />
+
+    <EditText
+        android:id="@+id/tecleaNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="_____"
+
+        android:background="@color/colorBlanco"
+        android:layout_alignTop="@+id/nombre"
+        android:layout_toEndOf="@+id/nombre"
+        android:layout_marginStart="42dp" />
+
+
+    <TextView
+        android:id="@+id/apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ape"
+        android:textSize="26dp"
+
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/nombre"
+        android:layout_alignEnd="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/tecleaApe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="_____"
+        android:background="@color/colorBlanco"
+        android:layout_alignTop="@+id/apellido"
+        android:layout_alignStart="@+id/tecleaNom" />
+
+    <TextView
+        android:id="@+id/nacim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nacimiento"
+        android:textSize="26dp"
+
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/apellido"
+        android:layout_alignStart="@+id/apellido" />
+
+    <EditText
+        android:id="@+id/tecleaNaci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Dia-Mes-Año"
+        android:background="@color/colorBlanco"
+        android:layout_alignBottom="@+id/nacim"
+        android:layout_alignStart="@+id/tecleaApe" />
+
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sexo"
+        android:textSize="26dp"
+
+        android:layout_below="@+id/nacim"
+        android:layout_alignStart="@+id/nombre"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:id="@+id/tecleaSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="_____"
+        android:background="@color/colorBlanco"
+        android:layout_alignBaseline="@+id/sexo"
+        android:layout_alignBottom="@+id/sexo"
+        android:layout_alignStart="@+id/tecleaNaci" />
+
+
+    <TextView
+        android:id="@+id/folio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fol"
+        android:textSize="26dp"
+
+        android:layout_below="@+id/sexo"
+        android:layout_alignEnd="@+id/nacim"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/tecleaFolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="_____"
+        android:background="@color/colorBlanco"
+        android:layout_alignBottom="@+id/folio"
+        android:layout_alignStart="@+id/tecleaSexo" />
+</RelativeLayout>

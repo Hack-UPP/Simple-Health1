@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="40dp"/>
+
+            <EditText
+                android:id="@+id/etCurp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="C.U.R.P."
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etFechaNacimiento"/>
+
+            <EditText
+                android:id="@+id/etPrimerApellido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Apellido Paterno"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/tvRegistro"/>
+
+            <EditText
+                android:id="@+id/etSegundoApellido"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Apellido Materno"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etPrimerApellido"/>
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etSegundoApellido"/>
+
+            <EditText
+                android:id="@+id/etFechaNacimiento"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Nacimiento (dd-mm-aaaa)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etSexo"/>
+
+            <EditText
+                android:id="@+id/etSexo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Sexo (M ó H)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etContrasena" />
+
+            <EditText
+                android:id="@+id/etNumeroSeguro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Seguro Social"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etNombre"/>
+
+            <EditText
+                android:id="@+id/etContrasena"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña (Mínimo 8 caracteres)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etNumeroSeguro"/>
+
+            <EditText
+                android:id="@+id/etFrecuenciaRes"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Frecuencia Respiratoria (R/P)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etCurp"/>
+
+            <EditText
+                android:id="@+id/etTemperatura"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Temperatura (°C)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etFrecuenciaRes"/>
+
+            <EditText
+                android:id="@+id/etFrecuenciaCar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Frecuencia Cardiaca (L/M)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etTemperatura"/>
+
+            <EditText
+                android:id="@+id/etTalla"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Talla (Metros)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etFrecuenciaCar"/>
+
+            <EditText
+                android:id="@+id/etPeso"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Peso (Kilogramos)"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="45dp"
+                android:layout_below="@+id/etTalla"/>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textSize="17dp"
+                android:background="@drawable/shape"
+                android:textColor="@color/blanco"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etPeso"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

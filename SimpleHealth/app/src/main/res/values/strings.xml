@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Simple Health</string>
+
+    <string name="elaborado">Version 1.0</string>
+
+    <string name="nom">Nombre</string>
+    <string name="ape">Apellido</string>
+    <string name="nacimiento">F.Nac</string>
+    <string name="sexo">Sexo</string>
+    <string name="fol">Folio</string>
+
+
+    <string name="inicioS">Inicio de Sesión</string>
+    <string name="registro">Registro</string>
+    <string name="numeroPac">Número de Paciente</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+</resources>

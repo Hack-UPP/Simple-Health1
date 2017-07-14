@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewInicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/inicioS"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etNumeroPaciente"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/numeroPac"
+        android:layout_below="@+id/textViewInicioSesion"
+        android:layout_alignStart="@+id/textViewInicioSesion"
+        android:layout_marginTop="113dp" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrasena"
+        android:layout_below="@+id/etNumeroPaciente"
+        android:layout_alignStart="@+id/etNumeroPaciente"
+        android:layout_marginTop="33dp" />
+    <Button
+        android:id="@+id/btnInicioSesión"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/ingresar"
+        android:textSize="17dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/blanco"
+        android:layout_below="@+id/etContrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+</RelativeLayout>
